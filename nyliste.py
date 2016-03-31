@@ -1,6 +1,6 @@
 #coding=utf-8
 with open("idtermer.txt") as file:
 	for line in file:
-		print line,
+		sys.stdout.write(line)
 		if line.startswith("te="):
-			print line.replace("te=", "en="),
+			sys.stdout.write(line.replace("te=", "en="))
